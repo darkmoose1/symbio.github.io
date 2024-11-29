@@ -27,19 +27,17 @@
                         aria-label="Toggle navigation">
                     Menu<i class="fas fa-bars ms-1"></i>
                 </button>
-                <div    class="collapse navbar-collapse"
+                <div    
                         id="navbarResponsive"
+                        class="collapse navbar-collapse"
                         onmouseover="showSmallNav(true);"
-                        onmouseout="showSmallNav(false);">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-
-                        <li class="nav-item"><a class="nav-link" id="home">Home</a></li>
-
-                        <li class="nav-item"><a class="nav-link" id="about">About</a></li>
-
-                        <li class="nav-item"><a class="nav-link" id="services" >Services</a></li>
-                        
-                        <li class="nav-item"><a class="nav-link" id="contact">Contact</a></li>
+                        onmouseout="showSmallNav(false);"
+                        > <!-- onmouseout="showSmallNav(false);" -->
+                    <ul class="navbar-nav text-uppercase ms-auto py-lg-0" class="margin-left: 0px">
+                        <li class="nav-item" onclick="showSmallNav(false);"><a class="nav-link" id="home" >Home</a></li>
+                        <li class="nav-item" onclick="showSmallNav(false);"><a class="nav-link" id="about">About</a></li>
+                        <li class="nav-item" onclick="showSmallNav(false);"><a class="nav-link" id="services">Services</a></li>
+                        <li class="nav-item" onclick="showSmallNav(false);"><a class="nav-link" id="contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
