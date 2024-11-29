@@ -6,7 +6,7 @@
   padding-top: 2px;
   padding-bottom: 2px;
   border-radius: 8px;
-  align-self: flex-start;
+  display: flex;
 }
 
 
@@ -3788,6 +3788,7 @@ textarea.form-control-lg {
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -7702,6 +7703,7 @@ textarea.form-control-lg {
 
 .ms-auto {
   margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .p-0 {
