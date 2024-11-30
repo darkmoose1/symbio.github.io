@@ -54,7 +54,7 @@
 }
 
 .section-text {
-  color: white;
+  color: black;
   font-style: normal;
   font-size: 18px;
 }
@@ -77,7 +77,7 @@
 
 .about-credentials {
   font-size: 20px;
-  color: #ff7db8;
+  color: #ee2a7b;
 }
 
 p {
@@ -113,7 +113,7 @@ body {
   flex-direction: column;
   margin: 0;
   font-family: "Northwell";
-  background-color: #212121;
+  background-color: beige;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
