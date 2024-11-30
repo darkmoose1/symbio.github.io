@@ -50,6 +50,7 @@ window.addEventListener('DOMContentLoaded', event => {
         document.getElementById('aboutSection').style.display = about ? "block" : "none";
         document.getElementById('servicesSection').style.display = services ? "block" : "none";
         document.getElementById('contactSection').style.display = contact ? "block" : "none";
+        scrollToTop();
     };
 
     document.getElementById("home").onclick = function () {
@@ -67,17 +68,14 @@ window.addEventListener('DOMContentLoaded', event => {
     document.getElementById("contact").onclick = function () {
         setSectionVisibility(!1, !1, !1, !0);
     };
-
-    /*
-    showSmallNav = function (show)
-    {
-        document.getElementById("navbarResponsive").style['display'] = 'block';
-    };
-    */
     
     showSmallNav = function (show)
     {
         document.getElementById("navbarResponsive").style['display']  = show ? 'block' : 'none';
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
     };
     
 });
