@@ -54,6 +54,7 @@
   font-style: italic;
   margin-bottom: 64px;
   margin-left: 32px;
+  color: gray;
 }
 
 .section-text {
@@ -68,6 +69,31 @@
 
 .section-logo-sm {
   width: 100px;
+}
+
+.section-content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-content-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 112px;
+}
+
+.section-content-subheading {
+  padding-right: 104px;
+}
+
+.section-image {
+  display: flex;
+  justify-content: center;
+}
+
+.section-image .img {
+  height: 140px;
 }
 
 .nav-link {
@@ -323,6 +349,10 @@ h4, .h4 {
     padding-left: 32px;
     padding-right: 32px;
     align-items: center;
+  }
+
+  .section-title-text {
+    font-size: 2.3rem;
   }
 }
 
