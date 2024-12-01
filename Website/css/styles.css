@@ -81,6 +81,7 @@
   margin-left: 18px;
   margin-right: 18px;
   font-size: x-large;
+  cursor: pointer;
 }
 
 .about-credentials {
@@ -233,8 +234,15 @@
 }
 
 .footer {
-  text-align: center;
-  font-size: 0.9rem;
+  display: flex;
+  justify-self: center;
+  padding-top: 12px;
+  padding-bottom: 22px;
+}
+
+.footer-text {
+  display: flex;
+  justify-self: center;
 }
 
 html {
