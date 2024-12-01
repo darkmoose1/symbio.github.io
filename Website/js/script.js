@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', event => {
     
     showSmallNav = function (show)
     {
-        document.getElementById("navbarResponsive").style['display']  = show ? 'block' : 'none';
+        document.getElementById("navbarResponsive").style['display']  = show ? 'flex' : 'none';
     };
 
     function scrollToTop() {
