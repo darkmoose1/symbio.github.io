@@ -35,8 +35,6 @@
 }
 
 .section-title-text {
-  margin-top: 80px;
-  margin-bottom: 64px;
   display: flex;
   font-family: 'Brush Script MT';
   font-weight: normal;
@@ -46,7 +44,7 @@
 .section-header {
   display: flex;
   flex-direction: row;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
 }
 
 .section-header-blurb {
@@ -59,6 +57,10 @@
   color: black;
   font-style: normal;
   font-size: 18px;
+}
+
+.section-text h4 {
+  padding-left: 12px;
 }
 
 .section-logo {
@@ -289,6 +291,7 @@ body {
 }
 
 p {
+  margin-left: 20px;
   margin-top: 0;
   margin-bottom: 3rem;
   line-height: 1.75;
@@ -313,15 +316,6 @@ h4, .h4 {
   .container {
     max-width: 540px;
   }
-
-  
-  .photo-blurb-lg {
-
-  }
-
-  .photo-blurb-sm {
-
-  }
 }
 
 @media (min-width: 768px) {
@@ -344,12 +338,7 @@ h4, .h4 {
   .photo-blurb-sm {
     display: none;
   }
-
-
-  
-
 }
-
 
 @media (max-width: 768px) {
   section {
@@ -376,6 +365,7 @@ h4, .h4 {
 
   .section-content-subheading {
     padding-right: 12px;
+    padding-left: 12px;
   }
 
   .photo-blurb-lg {
