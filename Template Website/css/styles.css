@@ -1,0 +1,140 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 99%;
+}
+
+.body-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid green;
+}
+
+/* Nav start */
+
+.navbar-list-container {
+    display: flex;
+    border: 1px solid purple;
+}
+
+.nav-menu-button {
+    display: flex;
+    display: none;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.nav-items li {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    border: 1px solid red;
+}
+
+.navbar-list-container-small {
+    position: absolute;
+    left: -28px;
+    top: 18px;
+    z-index: 1;
+}
+
+.nav-items-small li {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    border: 1px solid red;
+}
+
+/* Nav end */
+
+/* Header start */
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid yellow;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#ee2a7b, #ff7db8);
+    color: transparent;
+    background-clip: text;
+}
+
+.header-title-logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-subtitle {
+    display: flex;
+    font-family: 'Brush Script MT';
+    font-weight: normal;
+}
+
+.header-logo-img {
+    width: 200px;
+}
+
+/* End Header */
+
+.section {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    height: 32px;
+    border: 1px solid blue;
+}
+
+@media (max-width: 576px) {
+    .nav-menu-button {
+        display: flex;
+    }
+
+    .navbar-list-container {
+        display: none;
+    }
+
+    .navbar-list-container-small {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .nav-menu-button {
+        display: none;
+    }
+
+    .navbar-list-container-small {
+        display: none;
+    }
+
+    .navbar-list-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-list-container-small {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    
+}

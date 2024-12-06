@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Template</title>
+
+        <!-- Favicons
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/iPhone.png">
+        <link rel="icon" type="image/png" href="assets/favicons/browser.png" sizes="32x32"> -->
+
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="body-content">
+            
+            <nav clas="nav-container">
+                <div class="nav-menu-button">
+                    <button
+                        id="smallNavButton"
+                        type="button"
+                        onmouseover="showSmallNav(true);">
+                        Menu
+                    </button>
+                </div>
+                <div    class="navbar-list-container">
+                    <ul class="nav-items">
+                        <li onclick="showSmallNav(false);"><a id="home-menu-item" >Home</a></li>
+                        <li onclick="showSmallNav(false);"><a id="about-menu-item">About</a></li>
+                        <li onclick="showSmallNav(false);"><a id="services-menu-item">Services</a></li>
+                        <li onclick="showSmallNav(false);"><a id="contact-menu-item">Contact</a></li>
+                        <li onclick="showSmallNav(false);"><a id="resources-menu-item">Resources</a></li>
+                    </ul>
+                </div>
+                <div    id="navBarListSmall"
+                        class="navbar-list-container-small"
+                        onmouseover="showSmallNav(true);"
+                        onmouseout="showSmallNav(false);">
+                    <ul class="nav-items-small">
+                        <li onclick="showSmallNav(false);"><a id="home-menu-item-sm" >Home</a></li>
+                        <li onclick="showSmallNav(false);"><a id="about-menu-item-sm">About</a></li>
+                        <li onclick="showSmallNav(false);"><a id="services-menu-item-sm">Services</a></li>
+                        <li onclick="showSmallNav(false);"><a id="contact-menu-item-sm">Contact</a></li>
+                        <li onclick="showSmallNav(false);"><a id="resources-menu-item-sm">Resources</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-container">
+                <div class="header-title-logo">
+                    <img src="assets/img/logos/symbioaesthetics-transparent.svg" alt="..." class="header-logo-img"/>
+                    <div class="header-title">
+                        <h1 class="header-title">Symbio Aesthethic Clinic</h1>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="header-subtitle">Bringing together art and science to create harmony in your skin</h2>
+                </div>
+            </div>
+
+            <!-- Home -->
+            <div    id="homeSection"
+                    class="section">
+                <section>
+                    <h1>Home</h1>
+
+                    <p>
+                        <span style="font-style: italic;">
+                            Symbio Aesthetic Clinic
+                        </span>
+                        <span>
+                            is a private clinic, owned and operated by NZ Registered Nurse Jenny Laurence.
+                        </span>
+                    </p>
+                    <p class="photo-blurb-lg">
+                        <span>
+                            Jenny is a highly skilled appearance medicine nurse with a longstanding reputation for exceptional, authentic results and personal care.
+                        </span>
+                    </p>
+                </section>
+            </div>
+
+            <!-- About -->
+            <div    id="aboutSection"
+                    class="section">
+                <section>
+                    <h1>About</h1>
+                </section>
+            </div>
+
+            <!-- Services -->
+            <div    id="servicesSection"
+                    class="section">
+                <section>
+                    <h1>Services</h1>
+                </section>
+            </div>
+
+            <!-- Contact -->
+            <div    id="contactSection"
+                    class="section">
+                <section>
+                    <h1>Contact</h1>
+                </section>
+            </div>
+
+            <!-- Resources -->
+            <div    id="resourceSection"
+                    class="section">
+                <section>
+                    <h1>Resources</h1>
+                </section>
+            </div>
+            
+        </div>
+
+        <footer class="footer">Footer</footer>
+    </body>

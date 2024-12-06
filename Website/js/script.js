@@ -36,10 +36,10 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     function setSectionVisibility(home, about, services, contact) {
-        document.getElementById('homeSection').style.display = home ? "block" : "none";
-        document.getElementById('aboutSection').style.display = about ? "block" : "none";
-        document.getElementById('servicesSection').style.display = services ? "block" : "none";
-        document.getElementById('contactSection').style.display = contact ? "block" : "none";
+        document.getElementById('homeSection').style.display = home ? "flex" : "none";
+        document.getElementById('aboutSection').style.display = about ? "flex" : "none";
+        document.getElementById('servicesSection').style.display = services ? "flex" : "none";
+        document.getElementById('contactSection').style.display = contact ? "flex" : "none";
         scrollToTop();
     };
 
