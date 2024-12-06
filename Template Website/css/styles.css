@@ -111,6 +111,15 @@ body {
     flex-direction: row;
 }
 
+.section-text-image-img-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-text-image-img-left  p {
+    padding-left: 24px;
+}
+
 .section-image {
     display: flex;
     justify-content: center;
@@ -167,7 +176,7 @@ p > span {
     }
 
     .header-logo-img {
-        width: 40%;
+        width: 200px;
         padding-right: 0;
     }
 
@@ -187,6 +196,15 @@ p > span {
     .section-text-image--image {
         display: flex;
         justify-content: center;
+    }
+
+    .section-text-image-img-left {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .section-text-image-img-left p {
+        padding-left: 0;
     }
 }
 
