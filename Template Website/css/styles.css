@@ -127,6 +127,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 64px;
 }
 
 .header-title {
@@ -167,6 +168,8 @@ body {
     max-width: 1024px;
     align-self: center;
     padding-bottom: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .section-text-image {
@@ -199,10 +202,12 @@ body {
 
 .resources-left {
     padding-right: 24px;
+    flex: 1;
 }
 
 .resources-right {
     padding-left: 24px;
+    flex: 1;
 }
 
 /* Section end */
@@ -274,6 +279,10 @@ a:active {
 
     .navbar-list-container-small {
         display: none;
+    }
+
+    .header-container {
+        margin-bottom: 0;
     }
 
     .header-title {
