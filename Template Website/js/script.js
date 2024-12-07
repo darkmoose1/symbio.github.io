@@ -72,7 +72,7 @@ window.addEventListener('DOMContentLoaded', event => {
         setSectionVisibility(!1, !1, !1, !1, !1, !0);
     };
 
-    var acc = document.getElementsByClassName("accordion");
+    var acc = document.getElementsByClassName("contact-accordion");
     var i;
 
     for (i = 0; i < acc.length; i++) {
@@ -86,10 +86,10 @@ window.addEventListener('DOMContentLoaded', event => {
             /* Toggle between hiding and showing the active panel */
             var panel = this.nextElementSibling;
 
-            if (panel.style.display === "block") {
+            if (panel.style.display === "flex") {
                 panel.style.display = "none";
             } else {
-                panel.style.display = "block";
+                panel.style.display = "flex";
             }
         });
     }
