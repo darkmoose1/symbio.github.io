@@ -13,15 +13,14 @@ body {
     display: flex;
     flex-direction: column;
     background-color: beige;
-    min-height: 99%;
+    min-height: 100%;
+    margin: 0;
 }
 
 .body-content {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding-left: 12px;
-    padding-right: 12px;
 }
 
 /* Nav start */
@@ -207,6 +206,24 @@ body {
 }
 
 /* Section end */
+
+/* Contact */
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-links a {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* Elements */
 
