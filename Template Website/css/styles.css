@@ -217,6 +217,7 @@ body {
 .contact-links {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .contact-links a {
