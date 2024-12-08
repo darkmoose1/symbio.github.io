@@ -238,8 +238,11 @@ body {
 /* Booking iFrame end */
 
 /* Contact start */
-/* Style the buttons that are used to open and close the accordion panel */
+
 .contact-accordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: bisque;
     color: #444;
     cursor: pointer;
@@ -250,10 +253,8 @@ body {
     outline: none;
     transition: 0.4s;
     margin-top: 12px;
-    
 }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active, .contact-accordion:hover {
     background-color: #ccc;
 }
@@ -266,7 +267,6 @@ body {
     content: '\25B3';
 }
 
-  /* Style the accordion panel. Note: hidden by default */
 .contact-panel {
     display: flex;
     flex-direction: column;
@@ -284,9 +284,7 @@ body {
 
 /* Contact end */
 
-
-
-/* Elements */
+/* Elements start */
 
 p {
     padding-bottom: 18px;
@@ -308,7 +306,6 @@ a:hover {
 a:active { 
     text-decoration: none; 
 }
-
 
 /* Elements end */
 
