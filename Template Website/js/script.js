@@ -12,66 +12,35 @@ window.addEventListener('DOMContentLoaded', event => {
     };
 
     
-    function setSectionVisibility(home, about, services, contact, resource, book) {
-        document.getElementById('homeSection').style.display = home ? "flex" : "none";
-        document.getElementById('aboutSection').style.display = about ? "flex" : "none";
-        document.getElementById('servicesSection').style.display = services ? "flex" : "none";
-        document.getElementById('contactSection').style.display = contact ? "flex" : "none";
-        document.getElementById('resourceSection').style.display = resource ? "flex" : "none";
-        document.getElementById('bookSection').style.display = book ? "flex" : "none";
-        //scrollToTop();
-    };
-
-    /* Main menu */
-    document.getElementById("home-menu-item").onclick = function () {
-        setSectionVisibility(!0, !1, !1, !1, !1, !1);
-    };
-
-    document.getElementById("about-menu-item").onclick = function () {
-        setSectionVisibility(!1, !0, !1, !1, !1, !1);
-    };
-
-    document.getElementById("services-menu-item").onclick = function () {
-        setSectionVisibility(!1, !1, !0, !1, !1, !1);
-    };
-
-    document.getElementById("contact-menu-item").onclick = function () {
-        setSectionVisibility(!1, !1, !1, !0, !1, !1);
-    };
-
-    document.getElementById("resources-menu-item").onclick = function () {
-        setSectionVisibility(!1, !1, !1, !1, !0, !1);
-    };
-
-    document.getElementById("book-menu-item").onclick = function () {
-        setSectionVisibility(!1, !1, !1, !1, !1, !0);
-    };
-
-    /* Small menu */
-    document.getElementById("home-menu-item-sm").onclick = function () {
-        setSectionVisibility(!0, !1, !1, !1, !1, !1);
-    };
-
-    document.getElementById("about-menu-item-sm").onclick = function () {
-        setSectionVisibility(!1, !0, !1, !1, !1, !1);
-    };
-
-    document.getElementById("services-menu-item-sm").onclick = function () {
-        setSectionVisibility(!1, !1, !0, !1, !1, !1);
-    };
-
-    document.getElementById("contact-menu-item-sm").onclick = function () {
-        setSectionVisibility(!1, !1, !1, !0, !1, !1);
-    };
-
-    document.getElementById("resources-menu-item-sm").onclick = function () {
-        setSectionVisibility(!1, !1, !1, !1, !0, !1);
-    };
-
-    document.getElementById("book-menu-item-sm").onclick = function () {
-        setSectionVisibility(!1, !1, !1, !1, !1, !0);
-    };
-
+    function setSectionVisibility(visibleIndex) {
+        // Define all section IDs
+        const sectionIds = [
+            'homeSection', 'aboutSection', 'servicesSection',
+            'contactSection', 'resourceSection', 'bookSection'
+        ];
+    
+        // Hide all sections
+        sectionIds.forEach((sectionId, index) => {
+            document.getElementById(sectionId).style.display = (index === visibleIndex) ? 'flex' : 'none';
+        });
+    }
+    
+    // Main menu
+    document.getElementById("home-menu-item").onclick = () => setSectionVisibility(0);
+    document.getElementById("about-menu-item").onclick = () => setSectionVisibility(1);
+    document.getElementById("services-menu-item").onclick = () => setSectionVisibility(2);
+    document.getElementById("contact-menu-item").onclick = () => setSectionVisibility(3);
+    document.getElementById("resources-menu-item").onclick = () => setSectionVisibility(4);
+    document.getElementById("book-menu-item").onclick = () => setSectionVisibility(5);
+    
+    // Small menu
+    document.getElementById("home-menu-item-sm").onclick = () => setSectionVisibility(0);
+    document.getElementById("about-menu-item-sm").onclick = () => setSectionVisibility(1);
+    document.getElementById("services-menu-item-sm").onclick = () => setSectionVisibility(2);
+    document.getElementById("contact-menu-item-sm").onclick = () => setSectionVisibility(3);
+    document.getElementById("resources-menu-item-sm").onclick = () => setSectionVisibility(4);
+    document.getElementById("book-menu-item-sm").onclick = () => setSectionVisibility(5);
+    
     var acc = document.getElementsByClassName("contact-accordion");
     var i;
 
