@@ -1,6 +1,6 @@
 
 window.addEventListener('DOMContentLoaded', event => {
-    setSectionVisibility(!0, !1, !1, !1, !1, !1);
+    setSectionVisibility(0);
 
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: "smooth" });
