@@ -7,9 +7,9 @@
         <meta name="author" content="" />
         <title>Template</title>
 
-        <!-- Favicons
+        <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/iPhone.png">
-        <link rel="icon" type="image/png" href="assets/favicons/browser.png" sizes="32x32"> -->
+        <link rel="icon" type="image/png" href="assets/favicons/browser.png" sizes="32x32">
 
         <link href="css/styles.css" rel="stylesheet" />
         <script src="js/script.js"></script>
@@ -31,7 +31,18 @@
                     <ul class="nav-items">
                         <li onclick="showSmallNav(false);"><a id="home-menu-item" >Home</a></li>
                         <li onclick="showSmallNav(false);"><a id="about-menu-item">About</a></li>
-                        <li onclick="showSmallNav(false);"><a id="services-menu-item">Services</a></li>
+                        <!-- <li onclick="showSmallNav(false);"><a id="services-menu-item">Services</a></li> -->
+                        <div class="dropdown">
+                            <button class="dropbtn">Services</button>
+                            <div class="dropdown-content">
+                                <div class="dropdown-menu-spacer"></div>
+                                <a id="services-menu-item-consult">Consultation</a>
+                                <a id="services-menu-item-dermal-filler">Dermal filler treatment</a>
+                                <a id="services-menu-item-bio-remodelling">Bio re-modelling</a>
+                                <a id="services-menu-item-sweat-reduction">Sweat reduction</a>
+                                <a id="services-menu-item-followup">Followup consultation</a>
+                            </div>
+                        </div>
                         <li onclick="showSmallNav(false);"><a id="contact-menu-item">Contact</a></li>
                         <li onclick="showSmallNav(false);"><a id="resources-menu-item">Resources</a></li>
                         <li onclick="showSmallNav(false);"><a id="book-menu-item">Book</a></li>
@@ -44,7 +55,18 @@
                     <ul class="nav-items-small">
                         <li onclick="showSmallNav(false);"><a id="home-menu-item-sm" >Home</a></li>
                         <li onclick="showSmallNav(false);"><a id="about-menu-item-sm">About</a></li>
-                        <li onclick="showSmallNav(false);"><a id="services-menu-item-sm">Services</a></li>
+                        <!-- <li onclick="showSmallNav(false);"><a id="services-menu-item-sm">Services</a></li> -->
+                        <div class="dropdown-sm">
+                            <button class="dropbtn-sm">Services</button>
+                            <div class="dropdown-content-sm">
+                                <div class="dropdown-menu-spacer-sm"></div>
+                                <a id="services-menu-item-consult-sm">Consultation</a>
+                                <a id="services-menu-item-dermal-filler-sm">Dermal filler treatment</a>
+                                <a id="services-menu-item-bio-remodelling-sm">Bio re-modelling</a>
+                                <a id="services-menu-item-sweat-reduction-sm">Sweat reduction</a>
+                                <a id="services-menu-item-followup-sm">Followup consultation</a>
+                            </div>
+                        </div>
                         <li onclick="showSmallNav(false);"><a id="contact-menu-item-sm">Contact</a></li>
                         <li onclick="showSmallNav(false);"><a id="resources-menu-item-sm">Resources</a></li>
                         <li onclick="showSmallNav(false);"><a id="book-menu-item-sm">Book</a></li>
