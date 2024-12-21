@@ -196,7 +196,7 @@ body {
 .section-image-ama {
     display: flex;
     justify-content: center;
-  }
+}
   
 .section-image-ama img {
     height: 140px;
@@ -292,6 +292,10 @@ p {
 }
 
 p > span {
+    line-height: 1.8em;
+}
+
+li {
     line-height: 1.8em;
 }
 
