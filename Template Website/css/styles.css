@@ -201,7 +201,6 @@ body {
 
 .dropdown-sm:hover .dropdown-content-sm {
     display: flex;
-    flex-direction: column;
 }
   
 /* Dropdown Content (Hidden by Default) */
