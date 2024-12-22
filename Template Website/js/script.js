@@ -61,7 +61,14 @@ window.addEventListener('DOMContentLoaded', event => {
     document.getElementById("contact-menu-item-sm").onclick = () => setSectionVisibility(8);
     document.getElementById("resources-menu-item-sm").onclick = () => setSectionVisibility(9);
     document.getElementById("book-menu-item-sm").onclick = () => setSectionVisibility(10);
-    
+
+    // Assign event handler to nav items when clicked to dismiss the menu
+    const navItems = document.getElementsByClassName("nav-items-list-item");
+
+    for (i = 0; i < navItems.length; i++) {
+        navItems[i].onclick = () => showNav(false);
+    };
+
     var acc = document.getElementsByClassName("contact-accordion");
     var i;
 
