@@ -10,8 +10,7 @@ window.addEventListener('DOMContentLoaded', event => {
     {
         document.getElementById("navBarListSmall").style['display']  = show ? 'flex' : 'none';
     };
-
-    
+   
     function setSectionVisibility(visibleIndex) {
         // Define all section IDs
         const sectionIds = [
