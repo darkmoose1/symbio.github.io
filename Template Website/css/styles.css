@@ -213,6 +213,11 @@ body {
     top: 0;
     left: 104px;
 }
+
+.dropdown-sm-list {
+    display: flex;
+    flex-direction: column;
+}
   
 /* Links inside the dropdown */
 .dropdown-content-sm a {
@@ -237,8 +242,6 @@ body {
     display: flex;
     height: 200px;
     width: 2px;
-    color: red;
-    border: 1px solid red;
 }
 /* Small breakpoint end */
   
