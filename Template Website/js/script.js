@@ -15,8 +15,17 @@ window.addEventListener('DOMContentLoaded', event => {
     function setSectionVisibility(visibleIndex) {
         // Define all section IDs
         const sectionIds = [
-            'homeSection', 'aboutSection', 'servicesSection',
-            'contactSection', 'resourceSection', 'bookSection'
+            'homeSection',
+            'aboutSection',
+            'servicesConsultationSection',
+            'servicesAntiWrinkleSection',
+            'servicesDermalFillerSection',
+            'servicesBioRemodellingSection',
+            'servicesSweatReductionSection',
+            'servicesFollowUpSection',
+            'contactSection',
+            'resourceSection',
+            'bookSection'
         ];
     
         // Hide all sections
@@ -28,18 +37,28 @@ window.addEventListener('DOMContentLoaded', event => {
     // Main menu
     document.getElementById("home-menu-item").onclick = () => setSectionVisibility(0);
     document.getElementById("about-menu-item").onclick = () => setSectionVisibility(1);
-    /*document.getElementById("services-menu-item").onclick = () => setSectionVisibility(2);*/
-    document.getElementById("contact-menu-item").onclick = () => setSectionVisibility(3);
-    document.getElementById("resources-menu-item").onclick = () => setSectionVisibility(4);
-    document.getElementById("book-menu-item").onclick = () => setSectionVisibility(5);
+    document.getElementById("services-menu-item-consult").onclick = () => setSectionVisibility(2);
+    document.getElementById("services-menu-item-anti-wrinkle-treatment").onclick = () => setSectionVisibility(3);
+    document.getElementById("services-menu-item-dermal-filler").onclick = () => setSectionVisibility(4);
+    document.getElementById("services-menu-item-bio-remodelling").onclick = () => setSectionVisibility(5);
+    document.getElementById("services-menu-item-sweat-reduction").onclick = () => setSectionVisibility(6);
+    document.getElementById("services-menu-item-followup").onclick = () => setSectionVisibility(7);
+    document.getElementById("contact-menu-item").onclick = () => setSectionVisibility(8);
+    document.getElementById("resources-menu-item").onclick = () => setSectionVisibility(9);
+    document.getElementById("book-menu-item").onclick = () => setSectionVisibility(10);
     
     // Small menu
     document.getElementById("home-menu-item-sm").onclick = () => setSectionVisibility(0);
     document.getElementById("about-menu-item-sm").onclick = () => setSectionVisibility(1);
-    /*document.getElementById("services-menu-item-sm").onclick = () => setSectionVisibility(2);*/
-    document.getElementById("contact-menu-item-sm").onclick = () => setSectionVisibility(3);
-    document.getElementById("resources-menu-item-sm").onclick = () => setSectionVisibility(4);
-    document.getElementById("book-menu-item-sm").onclick = () => setSectionVisibility(5);
+    document.getElementById("services-menu-item-consult-sm").onclick = () => setSectionVisibility(2);
+    document.getElementById("services-menu-item-anti-wrinkle-treatment-sm").onclick = () => setSectionVisibility(3);
+    document.getElementById("services-menu-item-dermal-filler-sm").onclick = () => setSectionVisibility(4);
+    document.getElementById("services-menu-item-bio-remodelling-sm").onclick = () => setSectionVisibility(5);
+    document.getElementById("services-menu-item-sweat-reduction-sm").onclick = () => setSectionVisibility(6);
+    document.getElementById("services-menu-item-followup-sm").onclick = () => setSectionVisibility(7);
+    document.getElementById("contact-menu-item-sm").onclick = () => setSectionVisibility(8);
+    document.getElementById("resources-menu-item-sm").onclick = () => setSectionVisibility(9);
+    document.getElementById("book-menu-item-sm").onclick = () => setSectionVisibility(10);
     
     var acc = document.getElementsByClassName("contact-accordion");
     var i;

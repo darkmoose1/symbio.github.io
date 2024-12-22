@@ -230,12 +230,6 @@ body {
     background-color: burlywood;
     color: black;
 }
-  
-/* Show the dropdown menu on hover */
-.dropdown-sm:hover .dropdown-content-sm {
-    display: flex;
-    flex-direction: row;
-}
 
 .dropdown-menu-spacer-sm {
     display: flex;
