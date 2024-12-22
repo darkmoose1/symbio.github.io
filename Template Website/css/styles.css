@@ -152,7 +152,7 @@ body {
     position: absolute;
     width: max-content;
     top: 28px;
-    left: 0px;
+    left: -40px;
 }
   
 /* Links inside the dropdown */
@@ -171,17 +171,10 @@ body {
     display: flex;
     flex-direction: column;
 }
-  
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: flex;
-    flex-direction: column;
-}
 
 .dropdown-menu-spacer {
     display: flex;
     height: 18px;
-    width: 100%;
     background-color: transparent;
 }
 /* Large breakpoint end */
