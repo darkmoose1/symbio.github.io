@@ -7,11 +7,15 @@ window.addEventListener('DOMContentLoaded', event => {
     };
 
     showSmallNav = function (show) {
-        document.getElementById("nav-items-list-container-sm-id").style['display']  = show ? 'flex' : 'none';
+        document.getElementById("nav-items-list-container-sm-id").style['display'] = show ? 'flex' : 'none';
     };
 
+    showSmallServicesNav = function (show) {
+        document.getElementById("services-menu-dropdown-container-sm-id").style['display'] = show ? 'flex' : 'none';
+    }
+
     showNav = function (show) {
-        document.getElementById("services-menu-dropdown-container-id").style['display']  = show ? 'flex' : 'none';
+        document.getElementById("services-menu-dropdown-container-id").style['display'] = show ? 'flex' : 'none';
     };
    
     function setSectionVisibility(visibleIndex) {
@@ -67,6 +71,13 @@ window.addEventListener('DOMContentLoaded', event => {
 
     for (i = 0; i < navItems.length; i++) {
         navItems[i].onclick = () => showNav(false);
+    };
+
+    // Assign event handler to small nav items when clicked to dismiss the menu
+    const navItemsSm = document.getElementsByClassName("nav-items-list-item-sm");
+
+    for (i = 0; i < navItemsSm.length; i++) {
+        navItemsSm[i].onclick = () => showSmallNav(false);
     };
 
     var acc = document.getElementsByClassName("contact-accordion");
