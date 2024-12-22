@@ -210,8 +210,8 @@ body {
     display: none;
     position: absolute;
     width: max-content;
-    top: 28px;
-    left: 20px;
+    top: 0;
+    left: 104px;
 }
   
 /* Links inside the dropdown */
@@ -228,16 +228,17 @@ body {
 }
   
 /* Show the dropdown menu on hover */
-.dropdown-sm:hover .dropdown-content {
+.dropdown-sm:hover .dropdown-content-sm {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .dropdown-menu-spacer-sm {
     display: flex;
-    height: 18px;
-    width: 100%;
-    background-color: transparent;
+    height: 200px;
+    width: 2px;
+    color: red;
+    border: 1px solid red;
 }
 /* Small breakpoint end */
   
