@@ -29,23 +29,29 @@
                 </div>
                 <div    class="navbar-list-container">
                     <ul class="nav-items">
-                        <li onclick="showSmallNav(false);"><a id="home-menu-item" >Home</a></li>
-                        <li onclick="showSmallNav(false);"><a id="about-menu-item">About</a></li>
-                        <li onclick="showSmallNav(false);" class="dropdown">
+                        <li onclick="showNav(false);"><a id="home-menu-item" >Home</a></li>
+                        <li onclick="showNav(false);"><a id="about-menu-item">About</a></li>
+                        <li     
+                                onmouseover="showNav(true);"
+                                onmouseout="showNav(false);"
+                                class="dropdown">
                             <a>Services</a>
-                            <div class="dropdown-content">
+                            <div    id="navDropDown"
+                                    class="dropdown-content">
                                 <div class="dropdown-menu-spacer"></div>
-                                <a onclick="showSmallNav(false);" id="services-menu-item-consult">Consultation</a>
-                                <a onclick="showSmallNav(false);" id="services-menu-item-anti-wrinkle-treatment">Anti wrinkle treatment</a>
-                                <a onclick="showSmallNav(false);" id="services-menu-item-dermal-filler">Dermal filler treatment</a>
-                                <a onclick="showSmallNav(false);" id="services-menu-item-bio-remodelling">Bio re-modelling</a>
-                                <a onclick="showSmallNav(false);" id="services-menu-item-sweat-reduction">Sweat reduction</a>
-                                <a onclick="showSmallNav(false);" id="services-menu-item-followup">Followup consultation</a>
+                                <ul>
+                                    <li onclick="showNav(false);"><a id="services-menu-item-consult">Consultation</a></li>
+                                    <li onclick="showNav(false);"><a id="services-menu-item-anti-wrinkle-treatment">Anti wrinkle treatment</a></li>
+                                    <li onclick="showNav(false);"><a id="services-menu-item-dermal-filler">Dermal filler treatment</a></li>
+                                    <li onclick="showNav(false);"><a id="services-menu-item-bio-remodelling">Bio re-modelling</a></li>
+                                    <li onclick="showNav(false);"><a id="services-menu-item-sweat-reduction">Sweat reduction</a></li>
+                                    <li onclick="showNav(false);"><a id="services-menu-item-followup">Followup consultation</a></li>
+                                </ul> 
                             </div>
                         </li>
-                        <li onclick="showSmallNav(false);"><a id="contact-menu-item">Contact</a></li>
-                        <li onclick="showSmallNav(false);"><a id="resources-menu-item">Resources</a></li>
-                        <li onclick="showSmallNav(false);"><a id="book-menu-item">Book</a></li>
+                        <li onclick="showNav(false);"><a id="contact-menu-item">Contact</a></li>
+                        <li onclick="showNav(false);"><a id="resources-menu-item">Resources</a></li>
+                        <li onclick="showNav(false);"><a id="book-menu-item">Book</a></li>
                     </ul>
                 </div>
                 <div    id="navBarListSmall"

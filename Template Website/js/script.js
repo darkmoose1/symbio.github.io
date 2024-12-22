@@ -6,9 +6,12 @@ window.addEventListener('DOMContentLoaded', event => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    showSmallNav = function (show)
-    {
+    showSmallNav = function (show) {
         document.getElementById("navBarListSmall").style['display']  = show ? 'flex' : 'none';
+    };
+
+    showNav = function (show) {
+        document.getElementById("navDropDown").style['display']  = show ? 'flex' : 'none';
     };
    
     function setSectionVisibility(visibleIndex) {
