@@ -36,7 +36,7 @@ body {
     background-color: dimgray;
 }
 
-.nav-menu-button {
+.nav-menu-button-sm {
     display: none;
     border-radius: 0 0 4px 0;
 }
@@ -442,7 +442,7 @@ a:active {
 }
 
 @media (max-width: 576px) {
-    .nav-menu-button {
+    .nav-menu-button-sm {
         display: flex;
         background-color: dimgray;
         width: fit-content;
@@ -532,7 +532,7 @@ a:active {
 }
 
 @media (min-width: 576px) {
-    .nav-menu-button {
+    .nav-menu-button-sm {
         display: none;
     }
 
