@@ -29,7 +29,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1020;
-  }
+}
 
 .navbar-list-container {
     display: flex;
@@ -87,10 +87,11 @@ body {
 
 .nav-items-small li:first-child {
     border-top: 2px solid dimgray;
-  }
-  .nav-items-small li:last-child {
+}
+
+.nav-items-small li:last-child {
     border-bottom: 2px solid dimgray;
-  }
+}
 
 .nav-items-small a {
     float: left;
@@ -132,48 +133,53 @@ body {
     display: flex;
     background-color: dimgray;
     color: #f2f2f2;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: flex;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    width: max-content;
-    top: 28px;
-    left: 20px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    text-decoration: none;
-    display: flex;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover
-  {
+}
+
+.dropbtn:hover {
     background-color: burlywood;
     color: black;
 }
   
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: flex;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: max-content;
+    top: 28px;
+    left: 0px;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    text-decoration: none;
+    display: flex;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover
+{
+    background-color: burlywood;
+    color: black;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .dropdown-menu-spacer {
+.dropdown-menu-spacer {
     display: flex;
     height: 18px;
     width: 100%;
     background-color: transparent;
-  }
+}
 /* Large breakpoint end */
 
 /* Small breakpoint start */
@@ -186,48 +192,48 @@ body {
     display: flex;
     background-color: dimgray;
     color: #f2f2f2;
-  }
+}
   
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown-sm {
+/* The container <div> - needed to position the dropdown content */
+.dropdown-sm {
     position: relative;
     display: flex;
-  }
+}
   
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content-sm {
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content-sm {
     display: none;
     position: absolute;
     width: max-content;
     top: 28px;
     left: 20px;
-  }
+}
   
-  /* Links inside the dropdown */
-  .dropdown-content-sm a {
+/* Links inside the dropdown */
+.dropdown-content-sm a {
     text-decoration: none;
     display: flex;
-  }
+}
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content-sm a:hover
-  {
+/* Change color of dropdown links on hover */
+.dropdown-content-sm a:hover
+{
     background-color: burlywood;
     color: black;
 }
   
-  /* Show the dropdown menu on hover */
-  .dropdown-sm:hover .dropdown-content {
+/* Show the dropdown menu on hover */
+.dropdown-sm:hover .dropdown-content {
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .dropdown-menu-spacer-sm {
+.dropdown-menu-spacer-sm {
     display: flex;
     height: 18px;
     width: 100%;
     background-color: transparent;
-  }
+}
 /* Small breakpoint end */
   
 

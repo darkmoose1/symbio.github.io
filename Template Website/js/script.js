@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', event => {
     // Main menu
     document.getElementById("home-menu-item").onclick = () => setSectionVisibility(0);
     document.getElementById("about-menu-item").onclick = () => setSectionVisibility(1);
-    document.getElementById("services-menu-item").onclick = () => setSectionVisibility(2);
+    /*document.getElementById("services-menu-item").onclick = () => setSectionVisibility(2);*/
     document.getElementById("contact-menu-item").onclick = () => setSectionVisibility(3);
     document.getElementById("resources-menu-item").onclick = () => setSectionVisibility(4);
     document.getElementById("book-menu-item").onclick = () => setSectionVisibility(5);
@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', event => {
     // Small menu
     document.getElementById("home-menu-item-sm").onclick = () => setSectionVisibility(0);
     document.getElementById("about-menu-item-sm").onclick = () => setSectionVisibility(1);
-    document.getElementById("services-menu-item-sm").onclick = () => setSectionVisibility(2);
+    /*document.getElementById("services-menu-item-sm").onclick = () => setSectionVisibility(2);*/
     document.getElementById("contact-menu-item-sm").onclick = () => setSectionVisibility(3);
     document.getElementById("resources-menu-item-sm").onclick = () => setSectionVisibility(4);
     document.getElementById("book-menu-item-sm").onclick = () => setSectionVisibility(5);
