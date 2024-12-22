@@ -199,6 +199,11 @@ body {
     position: relative;
     display: flex;
 }
+
+.dropdown-sm:hover .dropdown-content-sm {
+    display: flex;
+    flex-direction: column;
+}
   
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content-sm {
@@ -457,6 +462,7 @@ a:active {
 
     .navbar-list-container-small {
         display: none;
+        /*justify-items: flex-start;*/
     }
 
     .header-container {
