@@ -7,11 +7,11 @@ window.addEventListener('DOMContentLoaded', event => {
     };
 
     showSmallNav = function (show) {
-        document.getElementById("navBarListSmall").style['display']  = show ? 'flex' : 'none';
+        document.getElementById("nav-items-list-container-sm-id").style['display']  = show ? 'flex' : 'none';
     };
 
     showNav = function (show) {
-        document.getElementById("services-menu-dropdown-container").style['display']  = show ? 'flex' : 'none';
+        document.getElementById("services-menu-dropdown-container-id").style['display']  = show ? 'flex' : 'none';
     };
    
     function setSectionVisibility(visibleIndex) {

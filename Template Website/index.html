@@ -21,7 +21,7 @@
             <nav class="nav-container sticky-top">
 
                 <!-- Large Nav menu - start -->
-                <div    class="nav-items-list-container">
+                <div class="nav-items-list-container">
                     <ul class="nav-items-list">
                         <li onclick="showNav(false);"><a id="home-menu-item" >Home</a></li>
                         <li onclick="showNav(false);"><a id="about-menu-item">About</a></li>
@@ -29,7 +29,7 @@
                                 onmouseout="showNav(false);"
                                 class="services-list-item">
                             <a>Services</a>
-                            <div    id="services-menu-dropdown-container"
+                            <div    id="services-menu-dropdown-container-id"
                                     class="services-menu-dropdown">
                                 <div class="services-menu-dropdown-spacer"></div>
                                 <ul>
@@ -51,15 +51,13 @@
 
                 <!-- Small Nav menu - start -->
                 <div class="nav-menu-button-sm">
-                    <button
-                        id="smallNavButton"
-                        type="button"
-                        class="menu-btn-sm"
-                        onmouseover="showSmallNav(true);">
+                    <button type="button"
+                            class="menu-btn-sm"
+                            onmouseover="showSmallNav(true);">
                         Menu
                     </button>
                 </div>
-                <div    id="navBarListSmall"
+                <div    id="nav-items-list-container-sm-id"
                         class="nav-items-list-container-sm"
                         onmouseover="showSmallNav(true);"
                         onmouseout="showSmallNav(false);">
