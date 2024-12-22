@@ -76,7 +76,7 @@ body {
     z-index: 1;
 }
 
-.nav-items-small li {
+.nav-items-sm li {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -85,15 +85,15 @@ body {
     border-right: 2px solid dimgray;
 }
 
-.nav-items-small li:first-child {
+.nav-items-sm li:first-child {
     border-top: 2px solid dimgray;
 }
 
-.nav-items-small li:last-child {
+.nav-items-sm li:last-child {
     border-bottom: 2px solid dimgray;
 }
 
-.nav-items-small a {
+.nav-items-sm a {
     float: left;
     color: #f2f2f2;
     padding: 14px 16px;
@@ -102,12 +102,12 @@ body {
     background-color: dimgray;
 }
 
-.nav-items-small a:hover {
+.nav-items-sm a:hover {
     background-color: burlywood;
     color: black;
 }
 
-.nav-items-small a.active {
+.nav-items-sm a.active {
     background-color: #04AA6D;
     color: white;
 }
@@ -146,7 +146,7 @@ body {
 }
   
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.services-menu-dropdown {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -156,23 +156,23 @@ body {
 }
   
 /* Links inside the dropdown */
-.dropdown-content a {
+.services-menu-dropdown a {
     text-decoration: none;
     display: flex;
 }
   
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+.services-menu-dropdown a:hover {
     background-color: burlywood;
     color: black;
 }
 
-.dropdown-content ul {
+.services-menu-dropdown ul {
     display: flex;
     flex-direction: column;
 }
 
-.dropdown-menu-spacer {
+.services-menu-dropdown-spacer {
     display: flex;
     height: 18px;
     background-color: transparent;
@@ -197,12 +197,12 @@ body {
     display: flex;
 }
 
-.dropdown-sm:hover .dropdown-content-sm {
+.dropdown-sm:hover .services-menu-dropdown-container-sm {
     display: flex;
 }
   
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content-sm {
+.services-menu-dropdown-container-sm {
     display: none;
     position: absolute;
     width: max-content;
@@ -210,25 +210,25 @@ body {
     left: 104px;
 }
 
-.dropdown-sm-list {
-    display: flex;
-    flex-direction: column;
-}
-  
 /* Links inside the dropdown */
-.dropdown-content-sm a {
+.services-menu-dropdown-container-sm a {
     text-decoration: none;
     display: flex;
 }
-  
+
+.services-menu-dropdown-list-sm {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Change color of dropdown links on hover */
-.dropdown-content-sm a:hover
+.services-menu-dropdown-sm a:hover
 {
     background-color: burlywood;
     color: black;
 }
 
-.dropdown-menu-spacer-sm {
+.services-menu-dropdown-spacer-sm {
     display: flex;
     height: 200px;
     width: 2px;

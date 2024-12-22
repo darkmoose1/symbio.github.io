@@ -17,16 +17,10 @@
     <body>
         <div class="body-content">
             
+            <!-- Navigation - Start -->
             <nav class="nav-container sticky-top">
-                <div class="nav-menu-button">
-                    <button
-                        id="smallNavButton"
-                        type="button"
-                        class="button-menu"
-                        onmouseover="showSmallNav(true);">
-                        Menu
-                    </button>
-                </div>
+
+                <!-- Large Nav menu - start -->
                 <div    class="navbar-list-container">
                     <ul class="nav-items">
                         <li onclick="showNav(false);"><a id="home-menu-item" >Home</a></li>
@@ -36,9 +30,9 @@
                                 onmouseout="showNav(false);"
                                 class="dropdown">
                             <a>Services</a>
-                            <div    id="navDropDown"
-                                    class="dropdown-content">
-                                <div class="dropdown-menu-spacer"></div>
+                            <div    id="services-menu-dropdown-container"
+                                    class="services-menu-dropdown">
+                                <div class="services-menu-dropdown-spacer"></div>
                                 <ul>
                                     <li onclick="showNav(false);"><a id="services-menu-item-consult">Consultation</a></li>
                                     <li onclick="showNav(false);"><a id="services-menu-item-anti-wrinkle-treatment">Anti wrinkle treatment</a></li>
@@ -54,18 +48,30 @@
                         <li onclick="showNav(false);"><a id="book-menu-item">Book</a></li>
                     </ul>
                 </div>
+                <!-- Large Nav menu - end -->
+
+                <!-- Small Nav menu - start -->
+                <div class="nav-menu-button">
+                    <button
+                        id="smallNavButton"
+                        type="button"
+                        class="button-menu"
+                        onmouseover="showSmallNav(true);">
+                        Menu
+                    </button>
+                </div>
                 <div    id="navBarListSmall"
                         class="navbar-list-container-small"
                         onmouseover="showSmallNav(true);"
                         onmouseout="showSmallNav(false);">
-                    <ul class="nav-items-small">
+                    <ul class="nav-items-sm">
                         <li onclick="showSmallNav(false);"><a id="home-menu-item-sm" >Home</a></li>
                         <li onclick="showSmallNav(false);"><a id="about-menu-item-sm">About</a></li>
                         <li onclick="showSmallNav(false);" class="dropdown-sm">
                             <a>Services</a>
-                            <div class="dropdown-content-sm">
-                                <div class="dropdown-menu-spacer-sm"></div>
-                                <div class="dropdown-sm-list">
+                            <div class="services-menu-dropdown-container-sm">
+                                <div class="services-menu-dropdown-spacer-sm"></div>
+                                <div class="services-menu-dropdown-list-sm">
                                     <a onclick="showSmallNav(false);" id="services-menu-item-consult-sm">Consultation</a>
                                     <a onclick="showSmallNav(false);" id="services-menu-item-anti-wrinkle-treatment-sm">Anti wrinkle treatment</a>
                                     <a onclick="showSmallNav(false);" id="services-menu-item-dermal-filler-sm">Dermal filler treatment</a>
@@ -80,7 +86,11 @@
                         <li onclick="showSmallNav(false);"><a id="book-menu-item-sm">Book</a></li>
                     </ul>
                 </div>
+                <!-- Small Nav menu - end -->
+
             </nav>
+            <!-- Navigation - End -->
+
             <div class="header-container">
                 <div class="header-title-logo">
                     <img src="assets/img/logos/symbioaesthetics-transparent.svg" alt="..." class="header-logo-img"/>

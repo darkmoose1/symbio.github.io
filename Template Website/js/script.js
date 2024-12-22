@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', event => {
     };
 
     showNav = function (show) {
-        document.getElementById("navDropDown").style['display']  = show ? 'flex' : 'none';
+        document.getElementById("services-menu-dropdown-container").style['display']  = show ? 'flex' : 'none';
     };
    
     function setSectionVisibility(visibleIndex) {
