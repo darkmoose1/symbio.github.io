@@ -53,7 +53,7 @@
                 <div class="nav-menu-button-sm">
                     <button type="button"
                             class="menu-btn-sm"
-                            onmouseover="showSmallNav(true);">
+                            onclick="showSmallNav(true);">
                         Menu
                     </button>
                 </div>
@@ -63,16 +63,14 @@
                     <ul class="nav-items-list-sm">
                         <li class="nav-items-list-item-sm"><a id="home-menu-item-sm" >Home</a></li>
                         <li class="nav-items-list-item-sm"><a id="about-menu-item-sm">About</a></li>
-                        <li class="nav-items-list-item-sm services-list-item-sm"
-                            onmouseover="showSmallServicesNav(true);"
-                            onmouseout="showSmallServicesNav(false);">
+                        <li class="services-list-item-sm"
+                            onclick="showSmallServicesNav(true);"
+                            onmouseleave="showSmallServicesNav(false);">
                             <a>Services</a>
                             <div    id="services-menu-dropdown-container-sm-id"
                                     class="services-menu-dropdown-container-sm">
                                 <div class="services-menu-dropdown-spacer-sm"></div>
                                 <div class="services-menu-dropdown-list-sm">
-
-                                    <!-- <li class="nav-items-list-item"><a id="services-menu-item-consult">Consultation</a></li> -->
                                     <ul>
                                         <li class="nav-items-list-item-sm"><a id="services-menu-item-consult-sm">Consultation</a></li>
                                         <li class="nav-items-list-item-sm"><a id="services-menu-item-anti-wrinkle-treatment-sm">Anti wrinkle treatment</a></li>
