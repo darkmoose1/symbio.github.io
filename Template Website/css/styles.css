@@ -114,14 +114,6 @@ body {
     color: white;
 }
 
-.menu-btn-sm {
-    border: none;
-    padding: 8px;
-    background-color: burlywood;
-    color: black;
-    border-radius: 0 0 4px 0;
-}
-
 /* Services drop down menu start */
 
 /* Large breakpoint start */
@@ -182,6 +174,15 @@ body {
 /* Large breakpoint end */
 
 /* Small breakpoint start */
+
+.menu-btn-sm {
+    border: none;
+    padding: 8px;
+    background-color: burlywood;
+    color: black;
+    border-radius: 0 0 4px 0;
+}
+
 .dropbtn-sm {
     padding: 5px 16px;
     font-size: 17px;
@@ -255,7 +256,6 @@ body {
 .header-title {
     display: flex;
     flex-direction: column;
-    font-family: 'Brush Script MT';
     font-size: 1.5em;
     text-align: center;
     background-image: linear-gradient(#ee2a7b, #ff7db8);
@@ -271,7 +271,6 @@ body {
 .header-subtitle {
     display: flex;
     text-align: center;
-    font-family: 'Brush Script MT';
     color: darkorchid;
     font-weight: normal;
 }
@@ -393,7 +392,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0 18px;
-    background-color: white;
+    background-color: wheat;
     display: none;
     overflow: hidden;
     margin-bottom: 12px;
