@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @font-face
-{ font-family: "Lato-Regular";
+{ font-family: "Lato Regular";
     src: url('/assets/fonts/Lato-Regular.ttf');
     src: local('/assets/fonts/Lato-Regular.ttf');
 }
@@ -11,10 +11,10 @@ html {
 }
 
 body {
-    font-family: "Lato-Regular";
+    font-family: "Lato Regular";
     display: flex;
     flex-direction: column;
-    background-color: beige;
+    background-color: linen;
     min-height: 100%;
     margin: 0;
 }
@@ -61,7 +61,7 @@ body {
 }
 
 .nav-items-list a:hover {
-    background-color: burlywood;
+    background-color: #f6b8d4;
     color: black;
 }
 
