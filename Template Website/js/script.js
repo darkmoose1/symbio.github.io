@@ -68,21 +68,18 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Assign event handler to nav items when clicked to dismiss the menu
     const navItems = document.getElementsByClassName("nav-items-list-item");
-
     for (i = 0; i < navItems.length; i++) {
         navItems[i].onclick = () => showNav(false);
     };
 
     // Assign event handler to small nav items when clicked to dismiss the menu
     const navItemsSm = document.getElementsByClassName("nav-items-list-item-sm");
-
     for (i = 0; i < navItemsSm.length; i++) {
         navItemsSm[i].onclick = () => showSmallNav(false);
     };
 
-    var acc = document.getElementsByClassName("contact-accordion");
-    var i;
 
+    const acc = document.getElementsByClassName("contact-accordion");
     for (i = 0; i < acc.length; i++) {
         
         acc[i].addEventListener("click", function() {

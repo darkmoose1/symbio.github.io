@@ -299,18 +299,10 @@ body {
     justify-content: space-between;
 }
 
-.section-text-img-right p {
-    padding-right: 24px;
-}
-
 .section-text-img-left {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.section-text-img-left  p {
-    padding-left: 24px;
 }
 
 .section-image-ama {
@@ -321,6 +313,15 @@ body {
 .section-image-ama img {
     height: 140px;
 }
+
+.section-text-img-left--text {
+    padding-left: 24px;
+}
+
+.section-text-img-right--text {
+    padding-right: 24px;
+}
+
 
 .resources {
     display: flex;
@@ -409,6 +410,10 @@ body {
 
 h1 {
     padding-bottom: 16px;
+}
+
+h2 {
+   
 }
 
 p > span {
