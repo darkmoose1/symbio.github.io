@@ -33,10 +33,38 @@ window.addEventListener('DOMContentLoaded', event => {
             'resourceSection',
             'bookSection'
         ];
+
+        const menuIds = [
+            'menuItem0',
+            'menuItem1',
+            'menuItem2',
+            'menuItem3',
+            'menuItem4',
+            'menuItem5'
+        ];
     
         // Hide all sections
         sectionIds.forEach((sectionId, index) => {
             document.getElementById(sectionId).style.display = (index === visibleIndex) ? 'flex' : 'none';
+        });
+
+        var menuItem = visibleIndex;
+        
+        if(menuItem == 2 || menuItem == 3 || menuItem == 4 ||  menuItem == 5 || menuItem == 6 || menuItem == 7) {
+            menuItem = 2;
+        }
+
+        if(menuItem > 7) {
+            menuItem = menuItem - 5;
+        }
+
+        // Set active menu item
+        menuIds.forEach((sectionId, index) => {
+            if(index == menuItem){
+                document.getElementById(menuIds[index]).classList.add('nav-item-list-active');
+            } else {
+                document.getElementById(menuIds[index]).classList.remove('nav-item-list-active');
+            }
         });
     }
     

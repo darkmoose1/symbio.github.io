@@ -57,10 +57,11 @@ body {
     background-color: dimgray;
     overflow: hidden;
     text-overflow: ellipsis;
+    border-radius: 4px;
 }
 
 .nav-items-list a:hover {
-    background-color: #f6b8d4;
+    background-color: linen;
     color: black;
 }
 
@@ -104,13 +105,28 @@ body {
 }
 
 .nav-items-list-sm a:hover {
-    background-color: burlywood;
+    background-color: linen;
     color: black;
 }
 
 .nav-items-list-sm a.active {
-    background-color: #04AA6D;
+    color: yellow;
     color: white;
+}
+
+.nav-item-list-active {
+    box-sizing: border-box;
+    border-bottom: 8px solid linen;
+}
+
+.book-btn {
+    background-color: linen !important;
+    color: black !important;
+    border-radius: 4px;
+}
+
+.book-btn:hover {
+    background-color: yellow !important;
 }
 
 /* Services drop down menu start */
@@ -177,7 +193,7 @@ body {
 .menu-btn-sm {
     border: none;
     padding: 8px;
-    background-color: burlywood;
+    background-color: linen;
     color: black;
     border-radius: 0 0 4px 0;
 }
@@ -257,8 +273,9 @@ body {
     flex-direction: column;
     align-self: center;
     font-size: 1.5em;
-    background-image: linear-gradient(#ee2a7b, #ff7db8);
-    color: transparent;
+    /* background-image: linear-gradient(#ee2a7b, #ff7db8); */
+    /* color: transparent; */
+    color: black;
     background-clip: text;
 }
 

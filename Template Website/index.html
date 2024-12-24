@@ -23,11 +23,12 @@
                 <!-- Large Nav menu - start -->
                 <div class="nav-items-list-container">
                     <ul class="nav-items-list">
-                        <li class="nav-items-list-item"><a id="home-menu-item" >Home</a></li>
-                        <li class="nav-items-list-item"><a id="about-menu-item">About</a></li>
+                        <li class="nav-items-list-item", id="menuItem0"><a id="home-menu-item" >Home</a></li>
+                        <li class="nav-items-list-item", id="menuItem1"><a id="about-menu-item">About</a></li>
                         <li     onmouseover="showNav(true);"
                                 onmouseout="showNav(false);"
-                                class="services-list-item">
+                                class="services-list-item"
+                                id="menuItem2">
                             <a>Services</a>
                             <div    id="services-menu-dropdown-container-id"
                                     class="services-menu-dropdown">
@@ -41,10 +42,10 @@
                                     <li class="nav-items-list-item"><a id="services-menu-item-followup">Followup consultation</a></li>
                                 </ul> 
                             </div>
-                        </li>
-                        <li class="nav-items-list-item"><a id="contact-menu-item">Contact</a></li>
-                        <li class="nav-items-list-item"><a id="resources-menu-item">Resources</a></li>
-                        <li class="nav-items-list-item"><a id="book-menu-item">Book Now</a></li>
+                        </li id="menuItem2">
+                        <li id="menuItem3" class="nav-items-list-item"><a id="contact-menu-item">Contact</a></li>
+                        <li id="menuItem4" class="nav-items-list-item"><a id="resources-menu-item">Resources</a></li>
+                        <li id="menuItem5" class="nav-items-list-item"><a id="book-menu-item" class=" book-btn">Book Now</a></li>
                     </ul>
                 </div>
                 <!-- Large Nav menu - end -->
