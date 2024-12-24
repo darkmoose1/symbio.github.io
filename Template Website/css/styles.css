@@ -153,6 +153,10 @@ body {
     position: relative;
     display: flex;
 }
+
+.services-menu-item a {
+    border-radius: 0;
+}
   
 /* Dropdown Content (Hidden by Default) */
 .services-menu-dropdown {
@@ -172,7 +176,7 @@ body {
   
 /* Change color of dropdown links on hover */
 .services-menu-dropdown a:hover {
-    background-color: burlywood;
+    background-color: linen;
     color: black;
 }
 
@@ -282,6 +286,7 @@ body {
 .header-title-logo {
     display: flex;
     flex-direction: row;
+    padding-top: 28px;
 }
 
 .header-subtitle {
@@ -293,6 +298,12 @@ body {
 
 .header-logo-img {
     width: 200px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.home-img {
+    width: 400px;
     padding-right: 32px;
     padding-left: 32px;
 }
@@ -430,7 +441,6 @@ h1 {
 }
 
 h2 {
-   
 }
 
 p > span {
