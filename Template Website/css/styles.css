@@ -2,8 +2,7 @@
 
 @font-face
 { font-family: "Lato Regular";
-    src: url('/assets/fonts/Lato-Regular.ttf');
-    src: local('/assets/fonts/Lato-Regular.ttf');
+    src: url('./../fonts/Lato-Regular.ttf');
 }
 
 html {
@@ -210,7 +209,7 @@ body {
     position: absolute;
     width: max-content;
     top: 0;
-    left: 64px;
+    left: 71px;
 }
 
 /* Links inside the dropdown */
@@ -256,8 +255,8 @@ body {
 .header-title {
     display: flex;
     flex-direction: column;
+    align-self: center;
     font-size: 1.5em;
-    text-align: center;
     background-image: linear-gradient(#ee2a7b, #ff7db8);
     color: transparent;
     background-clip: text;
@@ -277,7 +276,8 @@ body {
 
 .header-logo-img {
     width: 200px;
-    padding-right: 64px;
+    padding-right: 32px;
+    padding-left: 32px;
 }
 
 /* End Header */
@@ -407,12 +407,16 @@ body {
 
 /* Elements start */
 
+h1 {
+    padding-bottom: 16px;
+}
+
 p > span {
-    line-height: 1.8em;
+    line-height: 2.2em;
 }
 
 li {
-    line-height: 1.8em;
+    line-height: 2.2em;
 }
 
 a:link { 
@@ -472,6 +476,7 @@ a:active {
     .header-logo-img {
         width: 200px;
         padding-right: 0;
+        padding-left: 0;
     }
 
     .header-title {
