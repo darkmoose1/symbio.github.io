@@ -213,50 +213,47 @@ summary {
     outline: none;
     transition: transform 200ms ease-in-out 0s;
 }
-summary {
-    text-align: center;
-    padding: 12px 10px;
-    height: 17px;
-    background-color: var(--primColor);
-    border: 2px solid var(--secoColor);
-    border-radius: var(--cornerRad);
-    color: var(--secoColor);
-    cursor: pointer;
-    user-select: none;
-    outline: none;
-    transition: transform 200ms ease-in-out 0s;
-  }
 
-  summary::before,
-  summary::after {
+summary::before,
+summary::after {
     position: static;
     top: 0;
     left: 0;
-  }
-  summary::before {
+}
+
+summary::before {
     content: "";
-  }
-  summary::after {
-    content: "\26DB";
-  }
-  summary:hover {
+}
+
+summary::after {
+    content: "\26DB"; /* down arrow */
+    padding-bottom: 0;
+}
+
+summary:hover {
     transform: scale(1.1);
-  }
-  summary::marker {
+}
+
+summary::marker {
     font-size: 0;
-  }
-  summary::-webkit-details-marker {
+}
+
+summary::-webkit-details-marker {
     display: none;
-  }
-  details[open] .menu {
+}
+  
+details[open] .menu {
     animation-name: menuAnim;
-  }
-  details[open] summary::before {
-    content: "\25B3";
-  }
-  details[open] summary::after {
+}
+
+details[open] summary::before {
+    content: "\25B3"; /* up arrow */
+    padding-bottom: 4px;
+}
+
+details[open] summary::after {
     content: "";
-  }
+}
 
 .burger-menu-container {
     position: fixed;
