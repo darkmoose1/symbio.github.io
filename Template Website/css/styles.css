@@ -214,7 +214,6 @@ summary {
     transition: transform 200ms ease-in-out 0s;
 }
 summary {
-    writing-mode: vertical-lr;
     text-align: center;
     padding: 12px 10px;
     height: 17px;
@@ -238,8 +237,7 @@ summary {
     content: "";
   }
   summary::after {
-    content: "III";
-    letter-spacing: -1px;
+    content: "\26DB";
   }
   summary:hover {
     transform: scale(1.1);
@@ -254,7 +252,7 @@ summary {
     animation-name: menuAnim;
   }
   details[open] summary::before {
-    content: "X";
+    content: "\25B3";
   }
   details[open] summary::after {
     content: "";
