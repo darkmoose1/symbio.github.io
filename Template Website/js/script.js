@@ -13,9 +13,9 @@ window.addEventListener('DOMContentLoaded', event => {
         const btn = document.getElementById("nav-menu-button-sm-id");
 
         if(show) {
-            btn.innerHTML = '\u25B3';
+            btn.innerHTML = '\u25B2';
         } else {
-            btn.innerHTML = '\u26DB';
+            btn.innerHTML = '\u25BC';
         }
     };
 

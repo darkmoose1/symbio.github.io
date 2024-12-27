@@ -338,10 +338,18 @@ body {
 .section-image-ama {
     display: flex;
     justify-content: center;
+    padding-top: 28px;
 }
   
 .section-image-ama img {
     height: 140px;
+}
+
+.about-ana-label {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    padding-top: 18px;
 }
 
 .section-text-img-left--text {
@@ -359,6 +367,7 @@ body {
 .section-about-image-ana {
     display: flex;
     width: 200px;
+    padding-top: 64px;
 }
 
 .resources {
@@ -423,12 +432,14 @@ body {
     background-color: #ccc;
 }
 
+/* Up arrow */
 .contact-accordion:after {
-    content: '\26DB';
+    content: '\25BC';
 }
-  
+
+/* Down Arrow 25B2 */
 .active:after {
-    content: '\25B3';
+    content: '\25B2';
 }
 
 .contact-panel {
@@ -508,7 +519,6 @@ a:active {
 
     .nav-items-list-container-sm {
         display: none;
-        /*justify-items: flex-start;*/
     }
 
     .header-container {
