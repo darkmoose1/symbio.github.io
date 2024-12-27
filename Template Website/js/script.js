@@ -2,12 +2,21 @@
 window.addEventListener('DOMContentLoaded', event => {
     setSectionVisibility(0);
 
-    function scrollToTop() {
+    scrollToTop = function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
     showSmallNav = function (show) {
         document.getElementById("nav-items-list-container-sm-id").style['display'] = show ? 'flex' : 'none';
+
+        // Toggle up / down arrow
+        const btn = document.getElementById("nav-menu-button-sm-id");
+
+        if(show) {
+            btn.innerHTML = '\u25B3';
+        } else {
+            btn.innerHTML = '\u26DB';
+        }
     };
 
     showSmallServicesNav = function (show) {
@@ -66,6 +75,8 @@ window.addEventListener('DOMContentLoaded', event => {
                 document.getElementById(menuIds[index]).classList.remove('nav-item-list-active');
             }
         });
+
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }
     
     // Main menu
