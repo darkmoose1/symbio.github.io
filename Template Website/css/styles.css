@@ -302,9 +302,12 @@ body {
 }
 
 .home-img {
-    width: 400px;
-    padding-right: 32px;
-    padding-left: 32px;
+    width: 300px;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
 }
 
 /* End Header */
@@ -349,6 +352,14 @@ body {
     padding-right: 24px;
 }
 
+.section-about-image-ana-mobile {
+    display: none;
+}
+
+.section-about-image-ana {
+    display: flex;
+    width: 200px;
+}
 
 .resources {
     display: flex;
@@ -363,6 +374,10 @@ body {
 .resources-right {
     padding-left: 24px;
     flex: 1;
+}
+
+.logo {
+    width: 400px;
 }
 
 /* Section end */
@@ -534,7 +549,7 @@ a:active {
     }
 
     .section-text-img-right img {
-        width: 200px;
+        width: 300px;
     }
 
     .section-text-image img {
@@ -554,6 +569,15 @@ a:active {
 
     .section-text-img-left img {
         width: 200px;
+    }
+
+    .section-about-image-ana-mobile {
+        display: flex;
+        width: 200px;
+    }
+
+    .section-about-image-ana {
+        display: none;
     }
 
     .resources {
