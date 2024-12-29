@@ -276,9 +276,7 @@ body {
     flex-direction: column;
     align-self: center;
     font-size: 1.5em;
-    /* background-image: linear-gradient(#ee2a7b, #ff7db8); */
-    /* color: transparent; */
-    color: black;
+    color: darkslateblue;
     background-clip: text;
 }
 
