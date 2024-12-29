@@ -40,7 +40,8 @@ window.addEventListener('DOMContentLoaded', event => {
             'servicesFollowUpSection',
             'contactSection',
             'resourceSection',
-            'bookSection'
+            'bookSection',
+            'disclaimerSection'
         ];
 
         const menuIds = [
@@ -91,6 +92,7 @@ window.addEventListener('DOMContentLoaded', event => {
     document.getElementById("contact-menu-item").onclick = () => setSectionVisibility(8);
     document.getElementById("resources-menu-item").onclick = () => setSectionVisibility(9);
     document.getElementById("book-menu-item").onclick = () => setSectionVisibility(10);
+    document.getElementById("disclaimerLink").onclick = () => setSectionVisibility(11);
     
     // Small menu
     document.getElementById("home-menu-item-sm").onclick = () => setSectionVisibility(0);
@@ -104,6 +106,7 @@ window.addEventListener('DOMContentLoaded', event => {
     document.getElementById("contact-menu-item-sm").onclick = () => setSectionVisibility(8);
     document.getElementById("resources-menu-item-sm").onclick = () => setSectionVisibility(9);
     document.getElementById("book-menu-item-sm").onclick = () => setSectionVisibility(10);
+    document.getElementById("disclaimerLink").onclick = () => setSectionVisibility(11);
 
     // Assign event handler to nav items when clicked to dismiss the menu
     const navItems = document.getElementsByClassName("nav-items-list-item");

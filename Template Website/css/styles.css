@@ -501,6 +501,11 @@ a:active {
     background-color: khaki;
 }
 
+.footer-disclaimer {
+    padding-left: 40px;
+    cursor: zoom-in;
+}
+
 @media (max-width: 576px) {
     .nav-menu-button-sm {
         display: flex;
