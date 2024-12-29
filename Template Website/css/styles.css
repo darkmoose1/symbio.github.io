@@ -503,6 +503,10 @@ a:active {
 
 .footer-disclaimer {
     padding-left: 40px;
+}
+
+.disclaimer {
+    color: teal;
     cursor: zoom-in;
 }
 

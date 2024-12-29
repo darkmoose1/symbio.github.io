@@ -92,8 +92,7 @@ window.addEventListener('DOMContentLoaded', event => {
     document.getElementById("contact-menu-item").onclick = () => setSectionVisibility(8);
     document.getElementById("resources-menu-item").onclick = () => setSectionVisibility(9);
     document.getElementById("book-menu-item").onclick = () => setSectionVisibility(10);
-    document.getElementById("disclaimerLink").onclick = () => setSectionVisibility(11);
-    
+
     // Small menu
     document.getElementById("home-menu-item-sm").onclick = () => setSectionVisibility(0);
     document.getElementById("about-menu-item-sm").onclick = () => setSectionVisibility(1);
@@ -106,8 +105,7 @@ window.addEventListener('DOMContentLoaded', event => {
     document.getElementById("contact-menu-item-sm").onclick = () => setSectionVisibility(8);
     document.getElementById("resources-menu-item-sm").onclick = () => setSectionVisibility(9);
     document.getElementById("book-menu-item-sm").onclick = () => setSectionVisibility(10);
-    document.getElementById("disclaimerLink").onclick = () => setSectionVisibility(11);
-
+    
     // Assign event handler to nav items when clicked to dismiss the menu
     const navItems = document.getElementsByClassName("nav-items-list-item");
     for (i = 0; i < navItems.length; i++) {
@@ -119,7 +117,6 @@ window.addEventListener('DOMContentLoaded', event => {
     for (i = 0; i < navItemsSm.length; i++) {
         navItemsSm[i].onclick = () => showSmallNav(false);
     };
-
 
     const acc = document.getElementsByClassName("contact-accordion");
     for (i = 0; i < acc.length; i++) {
@@ -140,4 +137,10 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     }
+
+    const disclaimerLinks = document.getElementsByClassName("disclaimer");
+
+    for (i = 0; i < disclaimerLinks.length; i++) {
+        disclaimerLinks[i].onclick = () => setSectionVisibility(11);
+    };
 });
