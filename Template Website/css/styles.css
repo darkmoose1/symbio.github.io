@@ -414,6 +414,10 @@ body {
 
 /* Contact start */
 
+.contact-accordion-container {
+    width: 480px;
+}
+
 .contact-accordion {
     display: flex;
     flex-direction: row;
