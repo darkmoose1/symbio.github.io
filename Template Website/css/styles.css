@@ -533,10 +533,29 @@ a:active {
 
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-top: 12px;
     padding-bottom: 12px;
     background-color: khaki;
+}
+
+.footer-links-container {
+    background-color: dimgray;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-banner {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
 }
 
 .footer-disclaimer {
@@ -644,6 +663,10 @@ a:active {
         display: none;
     }
 
+    .book-section-container {
+        margin-bottom: 24px;
+    }
+
     .resources {
         flex-direction: column;
     }
@@ -654,6 +677,10 @@ a:active {
     
     .resources-right {
         padding-left: 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
     }
 
     h1 {
