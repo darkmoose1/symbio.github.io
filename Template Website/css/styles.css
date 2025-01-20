@@ -537,6 +537,7 @@ a:active {
     justify-content: center;
     padding-bottom: 12px;
     background-color: khaki;
+    cursor: zoom-in;
 }
 
 .footer-links-container {
