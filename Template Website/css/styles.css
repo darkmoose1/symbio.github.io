@@ -680,6 +680,10 @@ a:active {
         padding-left: 0;
     }
 
+    .footer {
+        font-size: 0.8em;
+    }
+
     .footer-links {
         flex-direction: column;
     }
