@@ -2,84 +2,6 @@
 window.addEventListener('DOMContentLoaded', event => {
     setSectionVisibility(0);
 
-    scrollToTop = function () {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-
-    showSmallNav = function (show) {
-        document.getElementById("nav-items-list-container-sm-id").style['display'] = show ? 'flex' : 'none';
-
-        // Toggle up / down arrow
-        const btn = document.getElementById("nav-menu-button-sm-id");
-
-        if(show) {
-            btn.innerHTML = '\u25B2';
-        } else {
-            btn.innerHTML = '\u25BC';
-        }
-    };
-
-    showSmallServicesNav = function (show) {
-        document.getElementById("services-menu-dropdown-container-sm-id").style['display'] = show ? 'flex' : 'none';
-    }
-
-    showNav = function (show) {
-        document.getElementById("services-menu-dropdown-container-id").style['display'] = show ? 'flex' : 'none';
-    };
-   
-    function setSectionVisibility(visibleIndex) {
-        // Define all section IDs
-        const sectionIds = [
-            'homeSection',
-            'aboutSection',
-            'servicesConsultationSection',
-            'servicesAntiWrinkleSection',
-            'servicesDermalFillerSection',
-            'servicesBioRemodellingSection',
-            'servicesSweatReductionSection',
-            'servicesFollowUpSection',
-            'contactSection',
-            'resourceSection',
-            'bookSection',
-            'disclaimerSection'
-        ];
-
-        const menuIds = [
-            'menuItem0',
-            'menuItem1',
-            'menuItem2',
-            'menuItem3',
-            'menuItem4',
-            'menuItem5'
-        ];
-    
-        // Hide all sections
-        sectionIds.forEach((sectionId, index) => {
-            document.getElementById(sectionId).style.display = (index === visibleIndex) ? 'flex' : 'none';
-        });
-
-        var menuItem = visibleIndex;
-        
-        if(menuItem == 2 || menuItem == 3 || menuItem == 4 ||  menuItem == 5 || menuItem == 6 || menuItem == 7) {
-            menuItem = 2;
-        }
-
-        if(menuItem > 7) {
-            menuItem = menuItem - 5;
-        }
-
-        // Set active menu item
-        menuIds.forEach((sectionId, index) => {
-            if(index == menuItem){
-                document.getElementById(menuIds[index]).classList.add('nav-item-list-active');
-            } else {
-                document.getElementById(menuIds[index]).classList.remove('nav-item-list-active');
-            }
-        });
-
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-    
     // Main menu
     document.getElementById("home-menu-item").onclick = () => setSectionVisibility(0);
     document.getElementById("about-menu-item").onclick = () => setSectionVisibility(1);
@@ -144,3 +66,81 @@ window.addEventListener('DOMContentLoaded', event => {
         disclaimerLinks[i].onclick = () => setSectionVisibility(11);
     };
 });
+
+scrollToTop = function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+showSmallNav = function (show) {
+    document.getElementById("nav-items-list-container-sm-id").style['display'] = show ? 'flex' : 'none';
+
+    // Toggle up / down arrow
+    const btn = document.getElementById("nav-menu-button-sm-id");
+
+    if(show) {
+        btn.innerHTML = '\u25B2';
+    } else {
+        btn.innerHTML = '\u25BC';
+    }
+};
+
+showSmallServicesNav = function (show) {
+    document.getElementById("services-menu-dropdown-container-sm-id").style['display'] = show ? 'flex' : 'none';
+}
+
+showNav = function (show) {
+    document.getElementById("services-menu-dropdown-container-id").style['display'] = show ? 'flex' : 'none';
+};
+
+function setSectionVisibility(visibleIndex) {
+    // Define all section IDs
+    const sectionIds = [
+        'homeSection',
+        'aboutSection',
+        'servicesConsultationSection',
+        'servicesAntiWrinkleSection',
+        'servicesDermalFillerSection',
+        'servicesBioRemodellingSection',
+        'servicesSweatReductionSection',
+        'servicesFollowUpSection',
+        'contactSection',
+        'resourceSection',
+        'bookSection',
+        'disclaimerSection'
+    ];
+
+    const menuIds = [
+        'menuItem0',
+        'menuItem1',
+        'menuItem2',
+        'menuItem3',
+        'menuItem4',
+        'menuItem5'
+    ];
+
+    // Hide all sections
+    sectionIds.forEach((sectionId, index) => {
+        document.getElementById(sectionId).style.display = (index === visibleIndex) ? 'flex' : 'none';
+    });
+
+    var menuItem = visibleIndex;
+    
+    if(menuItem == 2 || menuItem == 3 || menuItem == 4 ||  menuItem == 5 || menuItem == 6 || menuItem == 7) {
+        menuItem = 2;
+    }
+
+    if(menuItem > 7) {
+        menuItem = menuItem - 5;
+    }
+
+    // Set active menu item
+    menuIds.forEach((sectionId, index) => {
+        if(index == menuItem){
+            document.getElementById(menuIds[index]).classList.add('nav-item-list-active');
+        } else {
+            document.getElementById(menuIds[index]).classList.remove('nav-item-list-active');
+        }
+    });
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+};

@@ -127,6 +127,24 @@ body {
     background-color: yellow !important;
 }
 
+.book-section-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.book-section-btn {
+    background-color: linen !important;
+    color: black !important;
+    border-radius: 4px;
+    border: 1px solid darkgrey;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.book-section-btn:hover {
+    background-color: moccasin !important;
+}
+
 /* Services drop down menu start */
 
 /* Large breakpoint start */
@@ -145,6 +163,22 @@ body {
     background-color: burlywood;
     color: black;
 }
+
+
+.img-div-offset {
+    z-index: -1;
+    width: 300px;
+    height: 470px;
+    position: relative;
+    left: 40px;
+    text-align: center;
+    background-color: cadetblue;
+    bottom: 440px;
+}
+
+
+
+
   
 /* The container <div> - needed to position the dropdown content */
 .services-list-item {
@@ -562,6 +596,10 @@ a:active {
 
     .header-subtitle {
         font-size: 1.2em;
+    }
+
+    .img-div-offset {
+        display: none;
     }
 
     .section-text-img-right {
