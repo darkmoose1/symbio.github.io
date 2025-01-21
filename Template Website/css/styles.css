@@ -61,6 +61,8 @@ body {
 .nav-items-list a:hover {
     background-color: linen;
     color: black;
+    border: 1px solid darkgrey;
+    margin: -1px;
 }
 
 .nav-items-list li {
