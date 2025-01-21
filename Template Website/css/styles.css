@@ -541,12 +541,20 @@ a:active {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .footer-links {
     display: flex;
     flex-direction: row;
+}
+
+.footer-links-list-left {
+    margin-right: 64px;
+}
+
+.footer-links-list-right {
+    margin-left: 64px;
 }
 
 .footer-banner {
@@ -682,6 +690,14 @@ a:active {
 
     .footer-links {
         flex-direction: column;
+    }
+
+    .footer-links-list-left {
+        margin-right: 0;
+    }
+    
+    .footer-links-list-right {
+        margin-left: 0;
     }
 
     h1 {
