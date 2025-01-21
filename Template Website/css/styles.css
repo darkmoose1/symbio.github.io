@@ -686,12 +686,8 @@ a:active {
         padding-left: 0;
     }
 
-    .footer {
+    .footer-banner {
         font-size: 0.8em;
-    }
-
-    .footer-links {
-        flex-direction: column;
     }
 
     .footer-links-list-left {
